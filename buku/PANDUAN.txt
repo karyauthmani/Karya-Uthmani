@@ -1,0 +1,23 @@
+FOLDER BAHAN BUKU UTHMANI
+
+Setiap buku mempunyai:
+- gambar/       : Kulit depan, kulit belakang dan contoh halaman.
+- dokumen/      : Sinopsis, isi kandungan, risalah atau dokumen berkaitan.
+- maklumat.txt  : Maklumat buku, harga, stok dan promosi untuk diisi.
+
+Cadangan nama gambar:
+- kulit-depan.jpg
+- kulit-belakang.jpg
+- contoh-halaman-01.jpg
+- contoh-halaman-02.jpg
+
+Format JPG, PNG atau WebP boleh digunakan. Nama fail lain juga boleh digunakan.
+Simpan hanya bahan buku yang anda mahu gunakan untuk laman dalam folder ini.
+
+Fail .gitkeep mengekalkan subfolder kosong apabila dimuat naik ke GitHub.
+Anda boleh membiarkannya di situ selepas memasukkan bahan sebenar.
+
+Halaman HTML sedia ada masih berada di folder utama projek.
+Bahan yang dimasukkan di sini belum dipaparkan secara automatik pada laman.
+Selepas bahan dilengkapkan, halaman buku boleh dikemas kini menggunakan bahan ini.
+
