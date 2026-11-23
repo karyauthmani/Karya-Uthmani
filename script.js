@@ -30,15 +30,15 @@ updateThemeControl();
 function buildMessage(selection) {
   if (selection === 'promosi') {
     const bookTitle = books[document.body.dataset.book];
-    return `Assalamualaikum. Saya ingin bertanya tentang promosi semasa ${bookTitle ? `untuk buku ${bookTitle}` : 'bagi koleksi buku Uthmani'}. Boleh maklumkan tawaran, syarat dan tempoh promosi yang tersedia? Terima kasih.`;
+    return `Assalamualaikum. Saya ingin bertanya tentang promosi semasa ${bookTitle ? `untuk buku ${bookTitle}` : 'bagi koleksi buku Karya Uthmani'}. Boleh maklumkan tawaran, syarat dan tempoh promosi yang tersedia? Terima kasih.`;
   }
   if (selection === 'pakej') {
-    return `Assalamualaikum. Saya berminat dengan pakej koleksi empat buku Uthmani:\n\n${Object.values(books).map((title, i) => `${i + 1}. ${title}`).join('\n')}\n\nBoleh maklumkan harga pakej, status stok dan pilihan penghantaran? Terima kasih.`;
+    return `Assalamualaikum. Saya berminat untuk membeli pakej koleksi empat buku Karya Uthmani:\n\n${Object.values(books).map((title, i) => `${i + 1}. ${title}`).join('\n')}\n\nBoleh maklumkan harga pakej, status stok dan cara pembelian? Terima kasih.`;
   }
   if (books[selection]) {
-    return `Assalamualaikum. Saya berminat untuk bertanya dan menempah buku:\n\n${books[selection]}\n\nBoleh maklumkan status stok dan pilihan penghantaran? Terima kasih.`;
+    return `Assalamualaikum. Saya berminat untuk membuat pembelian buku:\n\n${books[selection]}\n\nBoleh maklumkan status stok dan jumlah bayaran? Terima kasih.`;
   }
-  return 'Assalamualaikum. Saya ingin bertanya tentang koleksi buku Uthmani. Boleh bantu saya dengan maklumat buku, harga dan cara tempahan? Terima kasih.';
+  return 'Assalamualaikum. Saya ingin membuat pembelian buku Karya Uthmani. Boleh bantu saya dengan maklumat buku, harga dan cara pembelian? Terima kasih.';
 }
 
 const dialog = document.getElementById('order-dialog');
